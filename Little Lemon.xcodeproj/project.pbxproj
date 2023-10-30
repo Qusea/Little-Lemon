@@ -8,19 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		B90385022AED6A0A00569AB3 /* Little_LemonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90385012AED6A0A00569AB3 /* Little_LemonApp.swift */; };
-		B90385042AED6A0A00569AB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90385032AED6A0A00569AB3 /* ContentView.swift */; };
 		B90385062AED6A0E00569AB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B90385052AED6A0E00569AB3 /* Assets.xcassets */; };
 		B90385092AED6A0E00569AB3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B90385082AED6A0E00569AB3 /* Preview Assets.xcassets */; };
 		B90385102AED6A2700569AB3 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B903850F2AED6A2700569AB3 /* Onboarding.swift */; };
+		B9939C772AEF55CF00037789 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9939C762AEF55CE00037789 /* UserProfile.swift */; };
+		B9D6CC722AEEFC7900E87B59 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D6CC712AEEFC7900E87B59 /* Home.swift */; };
+		B9D6CC742AEEFCCF00E87B59 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D6CC732AEEFCCF00E87B59 /* Menu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B90384FE2AED6A0A00569AB3 /* Little Lemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Little Lemon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B90385012AED6A0A00569AB3 /* Little_LemonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Little_LemonApp.swift; sourceTree = "<group>"; };
-		B90385032AED6A0A00569AB3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B90385052AED6A0E00569AB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B90385082AED6A0E00569AB3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B903850F2AED6A2700569AB3 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		B9939C762AEF55CE00037789 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		B9D6CC712AEEFC7900E87B59 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		B9D6CC732AEEFCCF00E87B59 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +57,10 @@
 		B90385002AED6A0A00569AB3 /* Little Lemon */ = {
 			isa = PBXGroup;
 			children = (
+				B9939C762AEF55CE00037789 /* UserProfile.swift */,
+				B9D6CC712AEEFC7900E87B59 /* Home.swift */,
+				B9D6CC732AEEFCCF00E87B59 /* Menu.swift */,
 				B90385012AED6A0A00569AB3 /* Little_LemonApp.swift */,
-				B90385032AED6A0A00569AB3 /* ContentView.swift */,
 				B903850F2AED6A2700569AB3 /* Onboarding.swift */,
 				B90385052AED6A0E00569AB3 /* Assets.xcassets */,
 				B90385072AED6A0E00569AB3 /* Preview Content */,
@@ -141,7 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B90385102AED6A2700569AB3 /* Onboarding.swift in Sources */,
-				B90385042AED6A0A00569AB3 /* ContentView.swift in Sources */,
+				B9D6CC722AEEFC7900E87B59 /* Home.swift in Sources */,
+				B9939C772AEF55CF00037789 /* UserProfile.swift in Sources */,
+				B9D6CC742AEEFCCF00E87B59 /* Menu.swift in Sources */,
 				B90385022AED6A0A00569AB3 /* Little_LemonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +284,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Little Lemon/Preview Content\"";
+				DEVELOPMENT_TEAM = 39394DGY6Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -305,6 +314,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Little Lemon/Preview Content\"";
+				DEVELOPMENT_TEAM = 39394DGY6Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
