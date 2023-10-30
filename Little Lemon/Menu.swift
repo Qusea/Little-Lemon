@@ -42,7 +42,10 @@ struct Menu: View {
         return
       }
       if let data = data {
-        print("Data: \(data)")
+        let decoder = JSONDecoder()
+        if let menuList = try? decoder.decode(MenuList.self, from: data) {
+          print(menuList)
+        }
       }
     }
     task.resume()
