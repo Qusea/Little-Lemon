@@ -34,8 +34,10 @@ DerivedData/
 timeline.xctimeline
 playground.xcworkspace
 
-
 .build/
 
 # VSCode workspace files
 .vscode/
+/*.code-workspace
+*.code-workspace
+Little Lemon.code-workspace
