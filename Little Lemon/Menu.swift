@@ -1,6 +1,9 @@
 import SwiftUI
 
 struct Menu: View {
+
+  @Environment(\.managedObjectContext) private var viewContext
+
   var body: some View {
     VStack {
       Text("Little Lemon")
