@@ -19,6 +19,8 @@
 		B9D7FDAD2AF0485000356201 /* MenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D7FDAC2AF0485000356201 /* MenuList.swift */; };
 		B9D7FDAF2AF0485C00356201 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D7FDAE2AF0485C00356201 /* MenuItem.swift */; };
 		B9D7FDB22AF04CA200356201 /* ExampleDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B9D7FDB02AF04CA200356201 /* ExampleDatabase.xcdatamodeld */; };
+		B9D7FDB52AF0878900356201 /* Dish+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D7FDB32AF0878900356201 /* Dish+CoreDataClass.swift */; };
+		B9D7FDB62AF0878900356201 /* Dish+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D7FDB42AF0878900356201 /* Dish+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		B9D7FDAC2AF0485000356201 /* MenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.swift; sourceTree = "<group>"; };
 		B9D7FDAE2AF0485C00356201 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		B9D7FDB12AF04CA200356201 /* ExampleDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExampleDatabase.xcdatamodel; sourceTree = "<group>"; };
+		B9D7FDB32AF0878900356201 /* Dish+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dish+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B9D7FDB42AF0878900356201 /* Dish+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dish+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 		B90385002AED6A0A00569AB3 /* Little Lemon */ = {
 			isa = PBXGroup;
 			children = (
+				B9D7FDB32AF0878900356201 /* Dish+CoreDataClass.swift */,
+				B9D7FDB42AF0878900356201 /* Dish+CoreDataProperties.swift */,
 				B9939C762AEF55CE00037789 /* UserProfile.swift */,
 				B9D6CC712AEEFC7900E87B59 /* Home.swift */,
 				B9D7FDA82AF0476100356201 /* FetchedObjects.swift */,
@@ -167,10 +173,12 @@
 				B9D7FDAA2AF0476100356201 /* FetchedObjects.swift in Sources */,
 				B9D7FDAB2AF0476100356201 /* Persistence.swift in Sources */,
 				B9D7FDB22AF04CA200356201 /* ExampleDatabase.xcdatamodeld in Sources */,
+				B9D7FDB52AF0878900356201 /* Dish+CoreDataClass.swift in Sources */,
 				B9939C772AEF55CF00037789 /* UserProfile.swift in Sources */,
 				B9D7FDAF2AF0485C00356201 /* MenuItem.swift in Sources */,
 				B9D6CC742AEEFCCF00E87B59 /* Menu.swift in Sources */,
 				B90385022AED6A0A00569AB3 /* Little_LemonApp.swift in Sources */,
+				B9D7FDB62AF0878900356201 /* Dish+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
