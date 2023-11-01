@@ -31,7 +31,7 @@ struct Menu: View {
                 .padding(.vertical, 5)
                 .background(Color(.systemGray6))
                 .cornerRadius(10)
-            FetchedObjects(sortDescriptors: buildSortDescriptors()) { (dishes: [Dish]) in
+            FetchedObjects(predicate: buildPredicate(), sortDescriptors: buildSortDescriptors()) { (dishes: [Dish]) in
                 List(dishes) { dish in
                     NavigationLink {
                         DishView(dish: dish)
