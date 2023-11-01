@@ -87,4 +87,12 @@ struct Menu: View {
     func buildSortDescriptors() -> [NSSortDescriptor] {
         return [NSSortDescriptor(key: "title", ascending: true, selector: #selector(NSString.localizedStandardCompare))]
     }
+
+    func buildPredicate() -> NSPredicate {
+        if searchText.isEmpty {
+            return NSPredicate(value: true)
+        } else {
+            return NSPredicate(format: "title CONTAINS[cd] %@", searchText)
+        }
+    }
 }
