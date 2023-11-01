@@ -1,8 +1,16 @@
+//
+//  Menu.swift
+//  Little Lemon
+//
+//  Created by Qusea Saif on 10/29/23.
+//
+
 import CoreData
 import SwiftUI
 
 struct Menu: View {
     @Environment(\.managedObjectContext) private var viewContext
+    @State var searchText = ""
 
     var body: some View {
         VStack {
@@ -18,6 +26,11 @@ struct Menu: View {
             )
             .font(.subheadline)
             .padding()
+            TextField("Search", text: $searchText)
+                .padding(.horizontal, 10)
+                .padding(.vertical, 5)
+                .background(Color(.systemGray6))
+                .cornerRadius(10)
             FetchedObjects(sortDescriptors: buildSortDescriptors()) { (dishes: [Dish]) in
                 List(dishes) { dish in
                     NavigationLink {
