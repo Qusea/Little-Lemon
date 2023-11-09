@@ -21,7 +21,3 @@ struct Home: View {
         .navigationBarBackButtonHidden(true)
     }
 }
-
-#Preview {
-    Home()
-}

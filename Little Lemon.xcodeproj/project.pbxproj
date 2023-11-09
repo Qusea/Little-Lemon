@@ -11,6 +11,11 @@
 		B90385062AED6A0E00569AB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B90385052AED6A0E00569AB3 /* Assets.xcassets */; };
 		B90385092AED6A0E00569AB3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B90385082AED6A0E00569AB3 /* Preview Assets.xcassets */; };
 		B90385102AED6A2700569AB3 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B903850F2AED6A2700569AB3 /* Onboarding.swift */; };
+		B92C21002AF4842F00262208 /* LitttleLemonLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92C20FF2AF4842F00262208 /* LitttleLemonLogo.swift */; };
+		B92C21022AF4846D00262208 /* MenuCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92C21012AF4846C00262208 /* MenuCategory.swift */; };
+		B92C21042AF488D400262208 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92C21032AF488D400262208 /* Colors.swift */; };
+		B9351E772AF6E83D009DC6A6 /* HeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9351E762AF6E83D009DC6A6 /* HeroView.swift */; };
+		B9351E7B2AF86278009DC6A6 /* MenuBreakdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9351E7A2AF86278009DC6A6 /* MenuBreakdown.swift */; };
 		B9939C772AEF55CF00037789 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9939C762AEF55CE00037789 /* UserProfile.swift */; };
 		B9D6CC722AEEFC7900E87B59 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D6CC712AEEFC7900E87B59 /* Home.swift */; };
 		B9D6CC742AEEFCCF00E87B59 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D6CC732AEEFCCF00E87B59 /* Menu.swift */; };
@@ -30,6 +35,11 @@
 		B90385052AED6A0E00569AB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B90385082AED6A0E00569AB3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B903850F2AED6A2700569AB3 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		B92C20FF2AF4842F00262208 /* LitttleLemonLogo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LitttleLemonLogo.swift; sourceTree = "<group>"; };
+		B92C21012AF4846C00262208 /* MenuCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuCategory.swift; path = "../../../../Little Lemon/Little Lemon/Little Lemon/MenuCategory.swift"; sourceTree = "<group>"; };
+		B92C21032AF488D400262208 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		B9351E762AF6E83D009DC6A6 /* HeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroView.swift; sourceTree = "<group>"; };
+		B9351E7A2AF86278009DC6A6 /* MenuBreakdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBreakdown.swift; sourceTree = "<group>"; };
 		B9939C762AEF55CE00037789 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		B9D6CC712AEEFC7900E87B59 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		B9D6CC732AEEFCCF00E87B59 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
@@ -74,14 +84,19 @@
 			isa = PBXGroup;
 			children = (
 				B90385052AED6A0E00569AB3 /* Assets.xcassets */,
+				B92C21032AF488D400262208 /* Colors.swift */,
 				B9D7FDB32AF0878900356201 /* Dish+CoreDataClass.swift */,
 				B9D7FDB42AF0878900356201 /* Dish+CoreDataProperties.swift */,
 				B9D7FDB72AF094D600356201 /* DishView.swift */,
 				B9D7FDB02AF04CA200356201 /* ExampleDatabase.xcdatamodeld */,
 				B9D7FDA82AF0476100356201 /* FetchedObjects.swift */,
+				B9351E762AF6E83D009DC6A6 /* HeroView.swift */,
+				B9351E7A2AF86278009DC6A6 /* MenuBreakdown.swift */,
 				B9D6CC712AEEFC7900E87B59 /* Home.swift */,
 				B90385012AED6A0A00569AB3 /* Little_LemonApp.swift */,
+				B92C20FF2AF4842F00262208 /* LitttleLemonLogo.swift */,
 				B9D6CC732AEEFCCF00E87B59 /* Menu.swift */,
+				B92C21012AF4846C00262208 /* MenuCategory.swift */,
 				B9D7FDAE2AF0485C00356201 /* MenuItem.swift */,
 				B9D7FDAC2AF0485000356201 /* MenuList.swift */,
 				B903850F2AED6A2700569AB3 /* Onboarding.swift */,
@@ -170,13 +185,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B92C21022AF4846D00262208 /* MenuCategory.swift in Sources */,
 				B90385102AED6A2700569AB3 /* Onboarding.swift in Sources */,
 				B9D6CC722AEEFC7900E87B59 /* Home.swift in Sources */,
 				B9D7FDAD2AF0485000356201 /* MenuList.swift in Sources */,
 				B9D7FDAA2AF0476100356201 /* FetchedObjects.swift in Sources */,
+				B92C21002AF4842F00262208 /* LitttleLemonLogo.swift in Sources */,
+				B9351E772AF6E83D009DC6A6 /* HeroView.swift in Sources */,
 				B9D7FDAB2AF0476100356201 /* Persistence.swift in Sources */,
 				B9D7FDB22AF04CA200356201 /* ExampleDatabase.xcdatamodeld in Sources */,
 				B9D7FDB52AF0878900356201 /* Dish+CoreDataClass.swift in Sources */,
+				B9351E7B2AF86278009DC6A6 /* MenuBreakdown.swift in Sources */,
+				B92C21042AF488D400262208 /* Colors.swift in Sources */,
 				B9D7FDB82AF094D600356201 /* DishView.swift in Sources */,
 				B9939C772AEF55CF00037789 /* UserProfile.swift in Sources */,
 				B9D7FDAF2AF0485C00356201 /* MenuItem.swift in Sources */,
