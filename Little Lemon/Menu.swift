@@ -10,28 +10,31 @@ import SwiftUI
 
 struct Menu: View {
     @Environment(\.managedObjectContext) private var viewContext
+	@State var selection: Set<String> = []
     @State var searchText = ""
 
     var body: some View {
         VStack {
-            Text("Little Lemon")
-                .font(.title)
-                .fontWeight(.bold)
-                .padding(.bottom, 20)
-            Text("Chicago")
-                .font(.subheadline)
-                .padding(.bottom, 20)
-            Text(
-                "Little Lemon is a restaurant that serves healthy food. We are located in Chicago and we are open from 8am to 10pm every day."
-            )
-            .font(.subheadline)
+			HStack{//}(alignment: .center) {
+				Spacer()
+                LittleLemonLogo()
+                Spacer()
+					.overlay {
+						Image("profile-image-placeholder")
+							.resizable()
+							.aspectRatio(contentMode: .fit)
+							.frame(width: 40, height: 40)
+							.cornerRadius(10)
+							.padding(.leading, 20)
+					}
+            }
             .padding()
-            TextField("Search", text: $searchText)
-                .padding(.horizontal, 10)
-                .padding(.vertical, 5)
-                .background(Color(.systemGray6))
-                .cornerRadius(10)
-            FetchedObjects(predicate: buildPredicate(), sortDescriptors: buildSortDescriptors()) { (dishes: [Dish]) in
+			
+			HeroView(searchText: $searchText)
+			
+			MenuBreakdown(selection: $selection)
+            
+			FetchedObjects(predicate: buildPredicate(), sortDescriptors: buildSortDescriptors()) { (dishes: [Dish]) in
                 List(dishes) { dish in
                     NavigationLink {
                         DishView(dish: dish)
@@ -44,7 +47,7 @@ struct Menu: View {
                             } placeholder: {
                                 ProgressView()
                             }
-                            .frame(width: 100, height: 100)
+                            .frame(width: 50, height: 50)
                         }
                     }
                 }
@@ -75,6 +78,7 @@ struct Menu: View {
                         dish.price = item.price
                         dish.category = item.category
                         dish.dishDescription = item.description
+						viewContext.insert(dish)
                     }
 
                     try? viewContext.save()
@@ -89,10 +93,19 @@ struct Menu: View {
     }
 
     func buildPredicate() -> NSPredicate {
-        if searchText.isEmpty {
+		if searchText.isEmpty && selection.isEmpty {
             return NSPredicate(value: true)
-        } else {
-            return NSPredicate(format: "title CONTAINS[cd] %@", searchText)
         }
+		
+		var predicates: [NSPredicate] = []
+		if !searchText.isEmpty {
+			predicates.append(NSPredicate(format: "title CONTAINS[cd] %@", searchText))
+		}
+		if !selection.isEmpty {
+			predicates.append(NSPredicate(format: "category IN %@", selection))
+		}
+		
+		
+		return NSCompoundPredicate(type: .and, subpredicates: predicates)
     }
 }
